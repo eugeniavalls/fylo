@@ -1,0 +1,12 @@
+@use '../mixins/responsive.scss' as *;
+
+.curve{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+
+    @include responsive (desktop){
+        width: 1440px;
+    }
+}

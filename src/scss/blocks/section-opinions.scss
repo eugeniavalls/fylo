@@ -1,0 +1,189 @@
+@use '../mixins/responsive.scss' as *;
+
+.section-opinions{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-color-primary);
+    padding: 23px;
+    padding-bottom: 80px;
+
+    @include responsive (desktop){
+        flex-direction: row-reverse;
+        padding: 0 80px;
+        padding-bottom: 110px;
+        gap: 5.625rem;
+    }
+
+    &__image{
+        margin-bottom: 87px;
+
+        @include responsive (desktop){
+            margin-bottom: 0;
+            width: 542px;
+        }
+    }
+
+    &__texts{
+        text-align: center;
+
+        @include responsive (desktop){
+            text-align: left;
+        }
+    }
+
+    &__title{
+        font-family: var(--font-family-raleway);
+        font-weight: var(--font-weight-bold);
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--color-text);
+        margin: 0;
+        margin-bottom: 24px;
+
+        @include responsive (desktop){
+            font-size: 38px;
+            margin-bottom: 38px;
+        }
+    }
+
+    &__text{
+        font-family: var(--font-family-open-sans);
+        font-weight: var(--font-weight-regular);
+        font-size: 15px;
+        line-height: 21px;
+        color: var(--color-text-terciary);
+
+        @include responsive (desktop){
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &__links{
+        width: 140px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        border-bottom: 1px solid var(--color-link);
+        margin-bottom: 40px;
+
+        @include responsive (desktop){
+            width: 170px;
+            margin-left: 0;
+            margin-right: 0;
+            justify-content: start;
+            margin-bottom: 45px;
+        }
+    }
+
+    &__item{
+        font-family: var(--font-family-open-sans);
+        font-weight: var(--font-weight-regular);
+        font-size: 12px;
+        color: var(--color-link);
+
+        @include responsive (desktop){
+            font-size: 16px;
+        }
+    }
+
+    &__card{
+        margin-left: 45px;
+        margin-right: 45px;
+        background-color: var(--white);
+        border-radius: 4px;
+        box-shadow: 2px 2px 10px -5px black;
+
+        @include responsive (desktop){
+            margin-left: 0;
+            margin-right: 0;
+            width: 356px;
+        }
+    }
+
+    &__box{
+        padding: 19px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        @include responsive (desktop){
+            padding: 26px 33px;
+        }
+    }
+
+    &__quotes{
+        width: 14px;
+
+        @include responsive (desktop){
+            width: 18px;
+        }
+    }
+
+    &__text-card{
+        font-family: var(--font-family-open-sans);
+        font-weight: var(--font-weight-regular);
+        font-size: 10px;
+        line-height: 18px;
+        color: var(--color-text);
+        margin-bottom: 12px;
+
+        @include responsive (desktop){
+            font-size: 14px;
+            line-height: 23px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__user{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__avatar{
+        width: 24px;
+        border-radius: 50px;
+
+        @include responsive (desktop){
+            width: 32px;
+        }
+    }
+
+    &__name{
+        font-family: var(--font-family-open-sans);
+        font-weight: var(--font-weight-bold);
+        font-size: 9px;
+        color: var(--color-text);
+        margin: 0;
+        margin-bottom: 2px;
+
+        @include responsive (desktop){
+            font-size: 11px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__job{
+        font-family: var(--font-family-open-sans);
+        font-weight: var(--font-weight-regular);
+        font-size: 6px;
+        color: var(--color-text);
+
+        @include responsive (desktop){
+            font-size: 8px;
+        }
+    }
+}
+
+.margin-text{
+    margin-bottom: 36px;
+
+    @include responsive (desktop){
+        margin-bottom: 16px;
+    }
+}

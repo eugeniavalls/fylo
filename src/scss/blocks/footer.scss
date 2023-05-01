@@ -1,1 +1,46 @@
 /* ESTILOS DEL FOOTER */
+
+@use '../mixins/responsive.scss' as *;
+
+.footer{
+    padding: 65px 115px 100px 45px;
+    background-color: var(--background-color-footer);
+    color: var(--white);
+
+    @include responsive (desktop){
+        padding: 90px 566px 90px 80px;
+    }
+
+    &__logo{
+        width: 105px;
+        margin-bottom: 32px;
+
+        @include responsive (desktop){
+            width: 135px;
+            margin-bottom: 36px;
+        }
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        @include responsive (desktop){
+            flex-direction: row;
+            gap: 12.5rem;
+        }
+    }
+
+    &__contact--icons{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__text{
+        font-family: var(--font-family-open-sans);
+        font-weight: var(--font-weight-regular);
+        font-size: 16px;
+    }
+}

@@ -1,1 +1,65 @@
+@use '../mixins/responsive.scss' as *;
 
+.button-mail{
+    font-family: var(--font-family-raleway);
+    font-weight: var(--font-weight-regular);
+    font-size: 12px;
+    color: var(--color-text-secundary);
+    padding: 14px 180px 14px 21px;
+    border: 1px solid var(--color-text);
+    border-radius: 4px;
+
+    @include responsive (desktop){
+        font-family: var(--font-family-open-sans);
+        font-size: 14px;
+        padding: 14px 172px 14px 21px;
+    }
+}
+
+.button-started{
+    font-family: var(--font-family-raleway);
+    font-weight: var(--font-weight-bold);
+    font-size: 14px;
+    color: var(--white);
+    padding: 12px 113px;
+    background-color: var(--color-button);
+    border-radius: 4px;
+
+    @include responsive (desktop){
+        padding: 14px 61px;
+    }
+}
+
+.button-mail__access{
+    font-family: var(--font-family-raleway);
+    font-weight: var(--font-weight-regular);
+    font-size: 10px;
+    padding: 10px 102px 10px 8px;
+    background-color: var(--white);
+    color: var(--color-text-secundary);
+    border-radius: 2px;
+
+    @include responsive (desktop){
+        font-size: 12px;
+        padding: 16px 224px 16px 22px;
+        border-radius: 4px;
+    }
+}
+
+.button-started__access{
+    font-family: var(--font-family-raleway);
+    font-weight: var(--font-weight-bold);
+    font-size: 10px;
+    padding: 10px 70px;
+    background-color: var(--color-button);
+    color: var(--white);
+    border-radius: 2px;
+
+    @include responsive (desktop){
+        font-size: 14px;
+        padding: 16px 22px;
+        border-radius: 4px;
+        width: 200px;
+        text-align: center;
+    }
+}
